@@ -1,0 +1,1513 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$project.obj
+cinit CODE 0 2C4E 2C4E 74 1
+intcode_body CODE 0 263C 263C C6 1
+text0 CODE 0 12DA 12DA 1EE 1
+text1 CODE 0 286A 286A AC 1
+text2 CODE 0 2702 2702 BA 1
+text3 CODE 0 1FA6 1FA6 126 1
+text4 CODE 0 2D84 2D84 56 1
+text5 CODE 0 24A8 24A8 CC 1
+text6 CODE 0 6DC 6DC 65E 1
+text7 CODE 0 16B4 16B4 1BC 1
+text8 CODE 0 1A1C 1A1C 1AA 1
+text9 CODE 0 1E64 1E64 142 1
+text10 CODE 0 10A4 10A4 236 1
+text11 CODE 0 20CC 20CC 114 1
+text12 CODE 0 21E0 21E0 F4 1
+text13 CODE 0 2916 2916 90 1
+text14 CODE 0 2BD6 2BD6 78 1
+text15 CODE 0 2DDA 2DDA 4C 1
+text16 CODE 0 2E26 2E26 38 1
+text17 CODE 0 2D28 2D28 5C 1
+text18 CODE 0 29A6 29A6 8C 1
+text19 CODE 0 2A32 2A32 8C 1
+text20 CODE 0 2ABE 2ABE 8C 1
+text21 CODE 0 2B4A 2B4A 8C 1
+text22 CODE 0 2E8E 2E8E 2A 1
+text23 CODE 0 2F6C 2F6C 12 1
+text24 CODE 0 2F50 2F50 1C 1
+text25 CODE 0 14C8 14C8 1EC 1
+text26 CODE 0 2E5E 2E5E 30 1
+text27 CODE 0 23C8 23C8 E0 1
+text28 CODE 0 2EE2 2EE2 26 1
+text29 CODE 0 1D18 1D18 14C 1
+text30 CODE 0 2EB8 2EB8 2A 1
+text31 CODE 0 2F90 2F90 C 1
+text32 CODE 0 D3A D3A 36A 1
+text33 CODE 0 22D4 22D4 F4 1
+text34 CODE 0 2F08 2F08 24 1
+text35 CODE 0 1BC6 1BC6 152 1
+text36 CODE 0 2574 2574 C8 1
+text37 CODE 0 1870 1870 1AC 1
+text38 CODE 0 27BC 27BC AE 1
+text39 CODE 0 2F2C 2F2C 24 1
+text40 CODE 0 2F7E 2F7E 12 1
+text42 CODE 0 2CC2 2CC2 66 1
+idataCOMRAM CODE 0 2F9C 2F9C 9 1
+cstackCOMRAM COMRAM 1 1 1 32 1
+cstackBANK0 BANK0 1 60 60 73 1
+cstackBANK1 BANK1 1 100 100 27 1
+temp COMRAM 1 48 48 1 1
+bitbssCOMRAM COMRAM 1 238 47 1 1
+bssBANK0 BANK0 1 D3 D3 14 1
+bssBANK1 BANK1 1 127 127 23 1
+intcode CODE 0 8 8 E 1
+smallconst SMALLCONST 0 600 600 DC 1
+idataBANK0 CODE 0 2FA5 2FA5 6 1
+dataBANK0 BANK0 1 E7 E7 6 1
+dataCOMRAM COMRAM 1 3E 3E 9 1
+bssCOMRAM COMRAM 1 33 33 B 1
+$startup.obj
+reset_vec CODE 0 0 0 4 1
+end_init CODE 0 16 16 4 1
+config CONFIG 0 300000 300000 8 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM ED-FF 1
+RAM 14A-5FF 1
+SFR D00-FFF 1
+BANK0 ED-FF 1
+BANK1 14A-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+CONST 4-7 1
+CONST 1A-5FF 1
+CONST 2FAB-7FFF 1
+IDLOC 200000-200007 1
+STACK 14A-5FF 1
+SMALLCONST 2FAB-7FFF 1
+CODE 4-7 1
+CODE 1A-5FF 1
+CODE 2FAB-7FFF 1
+BIGRAM 49-5F 1
+BIGRAM ED-FF 1
+BIGRAM 14A-5FF 1
+COMRAM 49-5F 1
+CONFIG 300008-30000D 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 2FAB-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$project.obj
+8 intcode CODE >65:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\i2c.c
+8 intcode CODE >57:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+2CC2 text42 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\llmod.c
+2CC2 text42 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\llmod.c
+2CCE text42 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\llmod.c
+2CD2 text42 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\llmod.c
+2CD4 text42 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\llmod.c
+2CDE text42 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\llmod.c
+2CE0 text42 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\llmod.c
+2CE4 text42 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\llmod.c
+2CF8 text42 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\llmod.c
+2D08 text42 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\llmod.c
+2D12 text42 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\llmod.c
+2D16 text42 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\llmod.c
+2D16 text42 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\llmod.c
+2D26 text42 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\llmod.c
+263C intcode_body CODE >57:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+266E intcode_body CODE >58:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+2674 intcode_body CODE >59:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+267C intcode_body CODE >60:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+267E intcode_body CODE >61:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+268C intcode_body CODE >62:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+26C6 intcode_body CODE >64:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+2F7E text40 CODE >59:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\i2c.c
+2F7E text40 CODE >61:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\i2c.c
+2F82 text40 CODE >62:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\i2c.c
+2F86 text40 CODE >63:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\i2c.c
+2F8A text40 CODE >64:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\i2c.c
+2F8E text40 CODE >65:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\i2c.c
+2F2C text39 CODE >17:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+2F2C text39 CODE >18:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+2F30 text39 CODE >19:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+2F32 text39 CODE >20:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+2F36 text39 CODE >21:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+2F3A text39 CODE >22:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+2F3E text39 CODE >23:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+2F42 text39 CODE >24:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+2F44 text39 CODE >25:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+2F46 text39 CODE >26:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+2F48 text39 CODE >27:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+2F4A text39 CODE >28:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+2F4C text39 CODE >29:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+2F4E text39 CODE >30:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+27BC text38 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+27BC text38 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+27CC text38 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+27DA text38 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+27DC text38 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+27E4 text38 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+2802 text38 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+2804 text38 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+2810 text38 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+2818 text38 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+2836 text38 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+2838 text38 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+2840 text38 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+284A text38 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+284C text38 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+284E text38 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+2852 text38 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+2856 text38 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+285A text38 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+285C text38 CODE >85:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+1870 text37 CODE >86:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+1870 text37 CODE >90:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+1884 text37 CODE >91:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+1898 text37 CODE >92:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+18B4 text37 CODE >93:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+18C2 text37 CODE >94:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+18DE text37 CODE >95:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+18EC text37 CODE >96:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+18F0 text37 CODE >97:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+18F2 text37 CODE >98:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+18F4 text37 CODE >99:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+18F6 text37 CODE >100:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+18F8 text37 CODE >101:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+18FA text37 CODE >102:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+1906 text37 CODE >103:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+1908 text37 CODE >104:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+1914 text37 CODE >106:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+191C text37 CODE >110:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+1924 text37 CODE >111:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+1926 text37 CODE >112:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+193E text37 CODE >114:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+1946 text37 CODE >115:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+1948 text37 CODE >113:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+1952 text37 CODE >117:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+195A text37 CODE >121:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+1962 text37 CODE >122:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+1964 text37 CODE >123:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+197C text37 CODE >125:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+1984 text37 CODE >126:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+1986 text37 CODE >124:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+198E text37 CODE >129:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+1992 text37 CODE >131:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+199E text37 CODE >132:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+19AA text37 CODE >133:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+19AA text37 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+19AE text37 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+19BA text37 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+19C6 text37 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+19CA text37 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+19D6 text37 CODE >141:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+19DA text37 CODE >142:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+19E6 text37 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+19F2 text37 CODE >144:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+19F6 text37 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+2574 text36 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
+2574 text36 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
+257A text36 CODE >7:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
+25B4 text36 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
+25BA text36 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
+25F4 text36 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
+2606 text36 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
+2618 text36 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
+1BC6 text35 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+1BC6 text35 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+1BE6 text35 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+1BFA text35 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+1C1A text35 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+1C2E text35 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+1C38 text35 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+1C3C text35 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+1C44 text35 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+1C4A text35 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+1C4E text35 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+1C52 text35 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+1C64 text35 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+1C76 text35 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+1C7C text35 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+1C82 text35 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+1C9A text35 CODE >138:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+1CA4 text35 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+1CAE text35 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+1CB4 text35 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+1CBA text35 CODE >145:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+1CC0 text35 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+1CD8 text35 CODE >147:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+1CE2 text35 CODE >148:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+1CEC text35 CODE >149:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+1CF2 text35 CODE >156:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+2F08 text34 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftneg.c
+2F08 text34 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftneg.c
+2F12 text34 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftneg.c
+2F1E text34 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftneg.c
+2F2A text34 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftneg.c
+22D4 text33 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+22D4 text33 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+22EE text33 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+2300 text33 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+2326 text33 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+2328 text33 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+2334 text33 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+2342 text33 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+2346 text33 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+234A text33 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+2354 text33 CODE >58:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+2366 text33 CODE >60:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+2370 text33 CODE >61:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+2374 text33 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+2376 text33 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+237C text33 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+238E text33 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+2398 text33 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+239A text33 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+23A0 text33 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+23A6 text33 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+23B6 text33 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+D3A text32 CODE >7:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+D3A text32 CODE >14:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+D72 text32 CODE >16:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+D9A text32 CODE >18:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+DC2 text32 CODE >19:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+E7A text32 CODE >23:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+ECE text32 CODE >24:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+EDA text32 CODE >26:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+10A2 text32 CODE >27:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+2F90 text31 CODE >1:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+2F90 text31 CODE >2:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+2F94 text31 CODE >3:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+2F98 text31 CODE >4:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+2F9A text31 CODE >5:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+2EB8 text30 CODE >11:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\delay.c
+2EBA text30 CODE >13:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\delay.c
+2EBC text30 CODE >14:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\delay.c
+2EC0 text30 CODE >15:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\delay.c
+2EC2 text30 CODE >16:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\delay.c
+2ED0 text30 CODE >15:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\delay.c
+2ED8 text30 CODE >13:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\delay.c
+1D18 text29 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+1D18 text29 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+1D3E text29 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+1D52 text29 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+1D78 text29 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+1D8C text29 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+1D9E text29 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+1DA8 text29 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+1DAC text29 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+1DB4 text29 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+1DBA text29 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+1DBE text29 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+1DD0 text29 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+1DD4 text29 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+1DE6 text29 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+1DEC text29 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+1DF6 text29 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+1E12 text29 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+1E2A text29 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+1E2E text29 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+1E2E text29 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+1E38 text29 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+1E3E text29 CODE >85:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+2EE2 text28 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+2EE2 text28 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+2EEE text28 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+2EF6 text28 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+2EFE text28 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+23C8 text27 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\evalpoly.c
+23C8 text27 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\evalpoly.c
+240A text27 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\evalpoly.c
+240C text27 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\evalpoly.c
+248E text27 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\evalpoly.c
+249A text27 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\evalpoly.c
+24A6 text27 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\evalpoly.c
+2E5E text26 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fabs.c
+2E5E text26 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fabs.c
+2E62 text26 CODE >7:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fabs.c
+2E80 text26 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fabs.c
+2E8C text26 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fabs.c
+14C8 text25 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\atan.c
+14C8 text25 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\atan.c
+14F4 text25 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\atan.c
+1508 text25 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\atan.c
+1542 text25 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\atan.c
+1570 text25 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\atan.c
+1598 text25 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\atan.c
+15CA text25 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\atan.c
+15FC text25 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\atan.c
+1640 text25 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\atan.c
+164A text25 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\atan.c
+1682 text25 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\atan.c
+2F50 text24 CODE >67:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\i2c.c
+2F50 text24 CODE >69:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\i2c.c
+2F62 text24 CODE >70:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\i2c.c
+2F64 text24 CODE >71:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\i2c.c
+2F68 text24 CODE >72:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\i2c.c
+2F6C text23 CODE >48:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\i2c.c
+2F6C text23 CODE >50:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\i2c.c
+2E8E text22 CODE >75:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\i2c.c
+2E90 text22 CODE >77:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\i2c.c
+2E94 text22 CODE >78:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\i2c.c
+2E98 text22 CODE >82:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\i2c.c
+2EAC text22 CODE >84:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\i2c.c
+2EB0 text22 CODE >85:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\i2c.c
+2EB4 text22 CODE >86:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\i2c.c
+2EB6 text22 CODE >89:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\i2c.c
+2B4A text21 CODE >100:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2B4A text21 CODE >103:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2B50 text21 CODE >104:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2B56 text21 CODE >105:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2B5C text21 CODE >106:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2B62 text21 CODE >107:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2B68 text21 CODE >108:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2B74 text21 CODE >109:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2B7C text21 CODE >110:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2B82 text21 CODE >112:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2B88 text21 CODE >113:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2B8E text21 CODE >114:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2B94 text21 CODE >115:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2B9A text21 CODE >116:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2BA0 text21 CODE >117:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2BAC text21 CODE >118:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2BB4 text21 CODE >119:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2BBA text21 CODE >120:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2BCC text21 CODE >121:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2ABE text20 CODE >124:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2ABE text20 CODE >127:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2AC4 text20 CODE >128:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2ACA text20 CODE >129:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2AD0 text20 CODE >130:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2AD6 text20 CODE >131:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2ADC text20 CODE >132:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2AE8 text20 CODE >133:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2AF0 text20 CODE >134:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2AF6 text20 CODE >136:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2AFC text20 CODE >137:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2B02 text20 CODE >138:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2B08 text20 CODE >139:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2B0E text20 CODE >140:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2B14 text20 CODE >141:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2B20 text20 CODE >142:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2B28 text20 CODE >143:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2B2E text20 CODE >144:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2B40 text20 CODE >145:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2A32 text19 CODE >148:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2A32 text19 CODE >151:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2A38 text19 CODE >152:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2A3E text19 CODE >153:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2A44 text19 CODE >154:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2A4A text19 CODE >155:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2A50 text19 CODE >156:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2A5C text19 CODE >157:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2A64 text19 CODE >158:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2A6A text19 CODE >160:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2A70 text19 CODE >161:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2A76 text19 CODE >162:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2A7C text19 CODE >163:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2A82 text19 CODE >164:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2A88 text19 CODE >165:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2A94 text19 CODE >166:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2A9C text19 CODE >167:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2AA2 text19 CODE >168:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2AB4 text19 CODE >169:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+29A6 text18 CODE >76:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+29A6 text18 CODE >79:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+29AC text18 CODE >80:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+29B2 text18 CODE >81:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+29B8 text18 CODE >82:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+29BE text18 CODE >83:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+29C4 text18 CODE >84:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+29D0 text18 CODE >85:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+29D8 text18 CODE >86:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+29DE text18 CODE >88:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+29E4 text18 CODE >89:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+29EA text18 CODE >90:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+29F0 text18 CODE >91:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+29F6 text18 CODE >92:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+29FC text18 CODE >93:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2A08 text18 CODE >94:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2A10 text18 CODE >95:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2A16 text18 CODE >96:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2A28 text18 CODE >97:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2D28 text17 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lltoft.c
+2D28 text17 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lltoft.c
+2D2C text17 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lltoft.c
+2D2E text17 CODE >42:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lltoft.c
+2D38 text17 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lltoft.c
+2D3A text17 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lltoft.c
+2D5E text17 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lltoft.c
+2E26 text16 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awtoft.c
+2E26 text16 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awtoft.c
+2E2A text16 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awtoft.c
+2E2E text16 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awtoft.c
+2E36 text16 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awtoft.c
+2E3A text16 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awtoft.c
+2DDA text15 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftsub.c
+2DDA text15 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftsub.c
+2DEA text15 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftsub.c
+2DFC text15 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftsub.c
+2BD6 text14 CODE >42:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\altoft.c
+2BD6 text14 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\altoft.c
+2BDA text14 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\altoft.c
+2BDE text14 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\altoft.c
+2BE2 text14 CODE >48:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\altoft.c
+2BF2 text14 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\altoft.c
+2BF6 text14 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\altoft.c
+2BF8 text14 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\altoft.c
+2C02 text14 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\altoft.c
+2C04 text14 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\altoft.c
+2C28 text14 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\altoft.c
+2916 text13 CODE >254:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+2916 text13 CODE >256:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+2920 text13 CODE >257:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+2930 text13 CODE >258:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+293E text13 CODE >261:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+295C text13 CODE >262:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+2978 text13 CODE >263:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+2988 text13 CODE >268:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+2996 text13 CODE >269:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+2998 text13 CODE >273:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+21E0 text12 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\floor.c
+21E0 text12 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\floor.c
+21F8 text12 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\floor.c
+21FE text12 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\floor.c
+2204 text12 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\floor.c
+2218 text12 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\floor.c
+222C text12 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\floor.c
+223C text12 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\floor.c
+224A text12 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\floor.c
+227A text12 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\floor.c
+229C text12 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\floor.c
+22C6 text12 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\floor.c
+22D2 text12 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\floor.c
+20CC text11 CODE >277:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+20CC text11 CODE >279:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+20DC text11 CODE >280:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+20F0 text11 CODE >282:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+2114 text11 CODE >283:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+2132 text11 CODE >287:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+2138 text11 CODE >288:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+2140 text11 CODE >289:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+2154 text11 CODE >291:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+2162 text11 CODE >292:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+216A text11 CODE >293:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+2170 text11 CODE >294:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+2180 text11 CODE >296:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+2190 text11 CODE >300:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+21B2 text11 CODE >301:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+21D2 text11 CODE >306:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+10A4 text10 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\exp.c
+10A4 text10 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\exp.c
+10B4 text10 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\exp.c
+10C8 text10 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\exp.c
+10F0 text10 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\exp.c
+10F8 text10 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\exp.c
+110C text10 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\exp.c
+1134 text10 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\exp.c
+113C text10 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\exp.c
+1150 text10 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\exp.c
+1160 text10 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\exp.c
+116A text10 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\exp.c
+1186 text10 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\exp.c
+11B4 text10 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\exp.c
+11E8 text10 CODE >48:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\exp.c
+121C text10 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\exp.c
+1266 text10 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\exp.c
+1270 text10 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\exp.c
+1288 text10 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\exp.c
+129C text10 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\exp.c
+12CC text10 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\exp.c
+12CC text10 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\exp.c
+12D8 text10 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\exp.c
+1E64 text9 CODE >5:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\log.c
+1E64 text9 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\log.c
+1E6A text9 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\log.c
+1E72 text9 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\log.c
+1E86 text9 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\log.c
+1E96 text9 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\log.c
+1E9E text9 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\log.c
+1EB2 text9 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\log.c
+1F14 text9 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\log.c
+1F1C text9 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\log.c
+1F4E text9 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\log.c
+1A1C text8 CODE >5:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\pow.c
+1A1C text8 CODE >7:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\pow.c
+1A22 text8 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\pow.c
+1A32 text8 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\pow.c
+1A5A text8 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\pow.c
+1A62 text8 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\pow.c
+1A62 text8 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\pow.c
+1A76 text8 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\pow.c
+1A86 text8 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\pow.c
+1A9A text8 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\pow.c
+1AA0 text8 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\pow.c
+1AC0 text8 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\pow.c
+1AEE text8 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\pow.c
+1AF6 text8 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\pow.c
+1B0A text8 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\pow.c
+1B14 text8 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\pow.c
+1B30 text8 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\pow.c
+1B90 text8 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\pow.c
+1B9A text8 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\pow.c
+1BB8 text8 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\pow.c
+1BC4 text8 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\pow.c
+16B4 text7 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcsqrt.c
+16B4 text7 CODE >138:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcsqrt.c
+16DC text7 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcsqrt.c
+16E2 text7 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcsqrt.c
+16EA text7 CODE >141:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcsqrt.c
+16EA text7 CODE >142:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcsqrt.c
+16FE text7 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcsqrt.c
+16FE text7 CODE >144:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcsqrt.c
+170A text7 CODE >145:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcsqrt.c
+1744 text7 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcsqrt.c
+174E text7 CODE >147:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcsqrt.c
+1760 text7 CODE >148:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcsqrt.c
+1766 text7 CODE >150:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcsqrt.c
+1772 text7 CODE >151:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcsqrt.c
+179A text7 CODE >152:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcsqrt.c
+17C2 text7 CODE >153:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcsqrt.c
+17EA text7 CODE >154:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcsqrt.c
+1818 text7 CODE >155:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcsqrt.c
+1840 text7 CODE >156:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcsqrt.c
+1846 text7 CODE >157:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcsqrt.c
+6DC text6 CODE >172:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+6E0 text6 CODE >177:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+6E8 text6 CODE >178:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+6FA text6 CODE >179:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+70A text6 CODE >180:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+716 text6 CODE >181:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+722 text6 CODE >182:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+72E text6 CODE >183:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+878 text6 CODE >184:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+880 text6 CODE >185:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+88C text6 CODE >186:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+898 text6 CODE >187:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+8A4 text6 CODE >188:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+8A6 text6 CODE >190:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+8B2 text6 CODE >191:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+92A text6 CODE >192:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+9C2 text6 CODE >193:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+9EA text6 CODE >194:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+9EA text6 CODE >195:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+9F0 text6 CODE >179:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+9F6 text6 CODE >197:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+A24 text6 CODE >198:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+A26 text6 CODE >201:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+A32 text6 CODE >203:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+A3E text6 CODE >204:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+A4A text6 CODE >205:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+A56 text6 CODE >207:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+AD4 text6 CODE >208:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+AE4 text6 CODE >209:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+B56 text6 CODE >211:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+CA0 text6 CODE >212:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+D38 text6 CODE >213:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+24A8 text5 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+24A8 text5 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+24AC text5 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+24B0 text5 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+24C0 text5 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+24C4 text5 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+24C8 text5 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+24D8 text5 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+24DC text5 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+24EC text5 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+24F8 text5 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+24FC text5 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+24FE text5 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+2508 text5 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+250A text5 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+250E text5 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+2518 text5 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+252C text5 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+253C text5 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+253E text5 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+2548 text5 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+254C text5 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+2552 text5 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+2562 text5 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+2D84 text4 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul32.c
+2D84 text4 CODE >119:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul32.c
+2D94 text4 CODE >121:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul32.c
+2D98 text4 CODE >122:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul32.c
+2DA8 text4 CODE >123:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul32.c
+2DB2 text4 CODE >124:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul32.c
+2DBC text4 CODE >125:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul32.c
+2DC8 text4 CODE >128:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul32.c
+2DD8 text4 CODE >129:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul32.c
+1FA6 text3 CODE >4:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.h
+1FA6 text3 CODE >5:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.h
+2702 text2 CODE >29:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+2702 text2 CODE >30:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+2716 text2 CODE >31:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+2718 text2 CODE >32:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+271A text2 CODE >33:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+271E text2 CODE >36:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+2724 text2 CODE >37:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+2726 text2 CODE >38:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+2728 text2 CODE >39:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+272A text2 CODE >40:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+272C text2 CODE >41:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+274A text2 CODE >42:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+274C text2 CODE >43:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+274C text2 CODE >44:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+274E text2 CODE >45:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+2750 text2 CODE >46:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+2752 text2 CODE >47:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+2754 text2 CODE >49:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+27BA text2 CODE >50:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+286A text1 CODE >38:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+286A text1 CODE >39:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+286E text1 CODE >40:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2874 text1 CODE >41:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+287A text1 CODE >42:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2880 text1 CODE >43:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2886 text1 CODE >44:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+288C text1 CODE >46:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2890 text1 CODE >47:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2896 text1 CODE >48:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+289C text1 CODE >49:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+28A2 text1 CODE >50:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+28A8 text1 CODE >51:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+28AE text1 CODE >53:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+28B2 text1 CODE >54:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+28B8 text1 CODE >55:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+28BE text1 CODE >56:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+28C4 text1 CODE >57:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+28CA text1 CODE >58:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+28D0 text1 CODE >60:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+28D4 text1 CODE >61:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+28DA text1 CODE >62:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+28E0 text1 CODE >63:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+28E6 text1 CODE >64:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+28EC text1 CODE >65:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+28F2 text1 CODE >67:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+28F6 text1 CODE >68:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+28FC text1 CODE >69:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2902 text1 CODE >70:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+2908 text1 CODE >71:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+290E text1 CODE >72:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+12DA text0 CODE >34:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+12DA text0 CODE >35:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+12DE text0 CODE >36:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+12E2 text0 CODE >37:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+12E6 text0 CODE >39:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+1302 text0 CODE >40:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+1306 text0 CODE >42:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+130C text0 CODE >44:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+131E text0 CODE >45:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+1326 text0 CODE >46:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+1328 text0 CODE >49:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+132E text0 CODE >50:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+1332 text0 CODE >51:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+144A text0 CODE >52:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+1458 text0 CODE >53:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+14C6 text0 CODE >48:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+2C4E cinit CODE >1455:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C4E cinit CODE >1457:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C4E cinit CODE >1460:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C4E cinit CODE >1570:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C50 cinit CODE >1571:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C52 cinit CODE >1572:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C54 cinit CODE >1573:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C56 cinit CODE >1574:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C58 cinit CODE >1575:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C5A cinit CODE >1576:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C5E cinit CODE >1577:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C62 cinit CODE >1578:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C62 cinit CODE >1579:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C64 cinit CODE >1580:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C68 cinit CODE >1581:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C6A cinit CODE >1582:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C6C cinit CODE >1583:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C6E cinit CODE >1587:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C70 cinit CODE >1588:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C72 cinit CODE >1589:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C74 cinit CODE >1590:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C76 cinit CODE >1591:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C78 cinit CODE >1592:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C7A cinit CODE >1593:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C7E cinit CODE >1594:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C82 cinit CODE >1595:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C82 cinit CODE >1596:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C84 cinit CODE >1597:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C88 cinit CODE >1598:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C8A cinit CODE >1599:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C8C cinit CODE >1600:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C8E cinit CODE >1604:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C92 cinit CODE >1605:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C94 cinit CODE >1606:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C94 cinit CODE >1607:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C96 cinit CODE >1608:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C98 cinit CODE >1609:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C9A cinit CODE >1612:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2C9E cinit CODE >1613:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2CA0 cinit CODE >1614:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2CA0 cinit CODE >1615:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2CA2 cinit CODE >1616:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2CA4 cinit CODE >1617:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2CA6 cinit CODE >1620:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2CA8 cinit CODE >1623:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2CAC cinit CODE >1624:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2CAE cinit CODE >1625:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2CAE cinit CODE >1626:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2CB0 cinit CODE >1627:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2CB2 cinit CODE >1628:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2CB4 cinit CODE >1634:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2CB4 cinit CODE >1636:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2CB6 cinit CODE >1637:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2CB8 cinit CODE >1639:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2CBA cinit CODE >1640:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2CBC cinit CODE >1641:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+2CBE cinit CODE >1642:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\project.as
+$startup.obj
+16 end_init CODE >128:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\startup.as
+0 text CODE >61:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\startup.as
+0 text CODE >62:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\startup.as
+0 text CODE >63:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\startup.as
+0 text CODE >65:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\startup.as
+16 init CODE >112:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\startup.as
+0 reset_vec CODE >101:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\startup.as
+0 reset_vec CODE >106:D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\startup.as
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_K E7 0 BANK0 1 dataBANK0 project.obj
+_i E6 0 BANK0 1 bssBANK0 project.obj
+_j 3D 0 COMRAM 1 bssCOMRAM project.obj
+__size_of_DelayMs 0 0 ABS 0 - project.obj
+__LdataBANK0 0 0 ABS 0 dataBANK0 project.obj
+_pow$1203 93 0 BANK0 1 cstackBANK0 project.obj
+_pow$1204 96 0 BANK0 1 cstackBANK0 project.obj
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst project.obj
+_sensMillis 143 0 BANK1 1 bssBANK1 project.obj
+__Hspace_0 300008 0 ABS 0 - project.obj
+__Hspace_1 239 0 ABS 0 - project.obj
+__Hspace_2 0 0 ABS 0 - project.obj
+__HidataBANK0 0 0 ABS 0 idataBANK0 project.obj
+frexp@eptr 1B 0 COMRAM 1 cstackCOMRAM project.obj
+_PIDupdate D3A 0 CODE 0 text32 project.obj
+___ftdiv@exp 82 0 BANK0 1 cstackBANK0 project.obj
+__Hibigdata 0 0 CODE 0 ibigdata project.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst startup.obj
+___awtoft@sign 23 0 COMRAM 1 cstackCOMRAM project.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data project.obj
+__end_of_sensorSetup 2916 0 CODE 0 text1 project.obj
+__CFG_MCLRE$ON 0 0 ABS 0 - project.obj
+_kD 3E 0 COMRAM 1 dataCOMRAM project.obj
+_kI 41 0 COMRAM 1 dataCOMRAM project.obj
+_kP 44 0 COMRAM 1 dataCOMRAM project.obj
+_RADtoDEG 677 0 SMALLCONST 0 smallconst project.obj
+_IdleI2C 2F6C 0 CODE 0 text23 project.obj
+?_exp 84 0 BANK0 1 cstackBANK0 project.obj
+?_log 78 0 BANK0 1 cstackBANK0 project.obj
+?_map 60 0 BANK0 1 cstackBANK0 project.obj
+?_pow 8D 0 BANK0 1 cstackBANK0 project.obj
+__Lsmallconst 600 0 SMALLCONST 0 smallconst project.obj
+_BRGH 7D62 0 ABS 0 - project.obj
+_RCIE 7CED 0 ABS 0 - project.obj
+_SPEN 7D5F 0 ABS 0 - project.obj
+_TMR0 FD6 0 ABS 0 - project.obj
+_TXEN 7D65 0 ABS 0 - project.obj
+_TXIF 7CF4 0 ABS 0 - project.obj
+___sp 0 0 STACK 2 stack startup.obj
+_accX DA 0 BANK0 1 bssBANK0 project.obj
+_atan 14C8 0 CODE 0 text25 project.obj
+_data 127 0 BANK1 1 bssBANK1 project.obj
+_fabs 2E5E 0 CODE 0 text26 project.obj
+_main 12DA 0 CODE 0 text0 project.obj
+_sqrt 16B4 0 CODE 0 text7 project.obj
+_vPin 147 0 BANK1 1 bssBANK1 project.obj
+btemp 48 0 COMRAM 1 temp project.obj
+exp@x 84 0 BANK0 1 cstackBANK0 project.obj
+log@x 78 0 BANK0 1 cstackBANK0 project.obj
+map@x 60 0 BANK0 1 cstackBANK0 project.obj
+PIDupdate@Dterm 87 0 BANK0 1 cstackBANK0 project.obj
+___ftadd@f1 24 0 COMRAM 1 cstackCOMRAM project.obj
+___ftadd@f2 27 0 COMRAM 1 cstackCOMRAM project.obj
+pow@x 8D 0 BANK0 1 cstackBANK0 project.obj
+pow@y 90 0 BANK0 1 cstackBANK0 project.obj
+PIDupdate@Iterm 84 0 BANK0 1 cstackBANK0 project.obj
+start 16 0 CODE 0 init startup.obj
+PIDupdate@Pterm 81 0 BANK0 1 cstackBANK0 project.obj
+__size_of___aldiv 0 0 ABS 0 - project.obj
+computeAngle@rawGyroY 125 0 BANK1 1 cstackBANK1 project.obj
+__size_of___ftadd 0 0 ABS 0 - project.obj
+__size_of___ftdiv 0 0 ABS 0 - project.obj
+__size_of___ftmul 0 0 ABS 0 - project.obj
+__size_of___ftneg 0 0 ABS 0 - project.obj
+__size_of___ftsub 0 0 ABS 0 - project.obj
+__size_of___fttol 0 0 ABS 0 - project.obj
+__size_of_atan 0 0 ABS 0 - project.obj
+__size_of_fabs 0 0 ABS 0 - project.obj
+__size_of_main 0 0 ABS 0 - project.obj
+__size_of_sqrt 0 0 ABS 0 - project.obj
+__size_of___llmod 0 0 ABS 0 - project.obj
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM project.obj
+__end_of_RADtoDEG 67A 0 SMALLCONST 0 smallconst project.obj
+pow@yi 9A 0 BANK0 1 cstackBANK0 project.obj
+?___lmul 18 0 COMRAM 1 cstackCOMRAM project.obj
+?___wmul 18 0 COMRAM 1 cstackCOMRAM project.obj
+___ftdiv@f1 75 0 BANK0 1 cstackBANK0 project.obj
+___ftdiv@f2 78 0 BANK0 1 cstackBANK0 project.obj
+___ftdiv@f3 7F 0 BANK0 1 cstackBANK0 project.obj
+__LidataBANK0 0 0 ABS 0 idataBANK0 project.obj
+__Hpowerup 16 0 CODE 0 powerup project.obj
+__pbitbssCOMRAM 238 -1F1 COMRAM 1 bitbssCOMRAM project.obj
+sqrt@a 9E 0 BANK0 1 cstackBANK0 project.obj
+sqrt@i AA 0 BANK0 1 cstackBANK0 project.obj
+sqrt@q AB 0 BANK0 1 cstackBANK0 project.obj
+sqrt@x AE 0 BANK0 1 cstackBANK0 project.obj
+sqrt@z A7 0 BANK0 1 cstackBANK0 project.obj
+log@coeff 698 0 SMALLCONST 0 smallconst project.obj
+_computeAngle 6DC 0 CODE 0 text6 project.obj
+___ftge@ff1 6C 0 BANK0 1 cstackBANK0 project.obj
+___ftge@ff2 6F 0 BANK0 1 cstackBANK0 project.obj
+__end_of__npowers_ 650 0 SMALLCONST 0 smallconst project.obj
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM project.obj
+__accesstop 60 0 ABS 0 - startup.obj
+__size_of_OpenI2C_StSpeed 0 0 ABS 0 - project.obj
+intlevel0 0 0 CODE 0 text startup.obj
+intlevel1 0 0 CODE 0 text startup.obj
+intlevel2 0 0 CODE 0 text startup.obj
+intlevel3 0 0 CODE 0 text startup.obj
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM project.obj
+__end_oflog@coeff 6B3 0 SMALLCONST 0 smallconst project.obj
+___aldiv@divisor 28 0 COMRAM 1 cstackCOMRAM project.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM project.obj
+PIDupdate@sumErrore D7 0 BANK0 1 bssBANK0 project.obj
+___llmod@divisor 5 0 COMRAM 1 cstackCOMRAM project.obj
+computeAngle@angleSum 104 0 BANK1 1 cstackBANK1 project.obj
+__Hifardata 0 0 CODE 0 ifardata project.obj
+___aldiv@sign 2D 0 COMRAM 1 cstackCOMRAM project.obj
+__Hclrtext 0 0 ABS 0 clrtext project.obj
+__pidataCOMRAM 2F9C 0 CODE 0 idataCOMRAM project.obj
+__npowers_ 629 0 SMALLCONST 0 smallconst project.obj
+___ftmul@f1 60 0 BANK0 1 cstackBANK0 project.obj
+___ftmul@f2 63 0 BANK0 1 cstackBANK0 project.obj
+__end_ofatan@coeff_a 6C5 0 SMALLCONST 0 smallconst project.obj
+__end_ofatan@coeff_b 6D4 0 SMALLCONST 0 smallconst project.obj
+___ftneg@f1 20 0 COMRAM 1 cstackCOMRAM project.obj
+___wmul@multiplicand 1A 0 COMRAM 1 cstackCOMRAM project.obj
+__end_of_DelayMs 2EE2 0 CODE 0 text30 project.obj
+getAccelY@dataH 1E 0 COMRAM 1 cstackCOMRAM project.obj
+getAccelY@dataL 20 0 COMRAM 1 cstackCOMRAM project.obj
+___inthi_sp 0 0 STACK 2 stack startup.obj
+___intlo_sp 0 0 STACK 2 stack startup.obj
+__size_of___altoft 0 0 ABS 0 - project.obj
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM project.obj
+__size_of___awtoft 0 0 ABS 0 - project.obj
+_CCPR1L FBE 0 ABS 0 - project.obj
+__size_of_computeAngle 0 0 ABS 0 - project.obj
+__size_of_ReadI2C 0 0 ABS 0 - project.obj
+__Hintcode_body 0 0 ABS 0 intcode_body project.obj
+___altoft@c 27 0 COMRAM 1 cstackCOMRAM project.obj
+__end_of___ftge 263C 0 CODE 0 text36 project.obj
+__end_of___lmul 2DDA 0 CODE 0 text4 project.obj
+__end_of___wmul 2F08 0 CODE 0 text28 project.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs project.obj
+___ftsub@f1 60 0 BANK0 1 cstackBANK0 project.obj
+___ftsub@f2 63 0 BANK0 1 cstackBANK0 project.obj
+__end_of_getAccelX 2BD6 0 CODE 0 text21 project.obj
+__end_of_getAccelY 2B4A 0 CODE 0 text20 project.obj
+__end_of_getAccelZ 2ABE 0 CODE 0 text19 project.obj
+___fttol@f1 18 0 COMRAM 1 cstackCOMRAM project.obj
+__size_of_getAccelX 0 0 ABS 0 - project.obj
+__size_of_getAccelY 0 0 ABS 0 - project.obj
+__size_of_getAccelZ 0 0 ABS 0 - project.obj
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst project.obj
+__CFG_DEBUG$ON 0 0 ABS 0 - project.obj
+__Hintcodelo 16 0 CODE 0 intcodelo project.obj
+__size_of___ftpack 0 0 ABS 0 - project.obj
+__end_of___aldiv 2574 0 CODE 0 text5 project.obj
+__end_of___ftadd 1A1C 0 CODE 0 text37 project.obj
+__end_of___ftdiv 1E64 0 CODE 0 text29 project.obj
+__end_of___ftmul 1D18 0 CODE 0 text35 project.obj
+__end_of___ftneg 2F2C 0 CODE 0 text34 project.obj
+__end_of___ftsub 2E26 0 CODE 0 text15 project.obj
+__end_of___fttol 23C8 0 CODE 0 text33 project.obj
+__end_of___llmod 2D28 0 CODE 0 text42 project.obj
+?_eval_poly 6C 0 BANK0 1 cstackBANK0 project.obj
+__end_of_computeAngle D3A 0 CODE 0 text6 project.obj
+_dpowers 601 0 SMALLCONST 0 smallconst project.obj
+_getAccelX 2B4A 0 CODE 0 text21 project.obj
+_getAccelY 2ABE 0 CODE 0 text20 project.obj
+_getAccelZ 2A32 0 CODE 0 text19 project.obj
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM project.obj
+__size_of_floor 0 0 ABS 0 - project.obj
+__size_of_frexp 0 0 ABS 0 - project.obj
+__size_of_ldexp 0 0 ABS 0 - project.obj
+__size_of___lltoft 0 0 ABS 0 - project.obj
+__size_of_sensorSetup 0 0 ABS 0 - project.obj
+__Lintcodelo 16 0 CODE 0 intcodelo project.obj
+start_initialization 2C4E 0 CODE 0 cinit project.obj
+_OSCCON FD3 0 ABS 0 - project.obj
+pow@sign 99 0 BANK0 1 cstackBANK0 project.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM project.obj
+___altoft 2BD6 0 CODE 0 text14 project.obj
+___awtoft 2E26 0 CODE 0 text16 project.obj
+___aldiv@quotient 2E 0 COMRAM 1 cstackCOMRAM project.obj
+___rparam_used 1 0 ABS 0 - project.obj
+__end_of_my_ISR 2702 0 CODE 0 intcode_body project.obj
+__end_of___altoft 2C4E 0 CODE 0 text14 project.obj
+__end_of___awtoft 2E5E 0 CODE 0 text16 project.obj
+__pcstackBANK0 60 0 BANK0 1 cstackBANK0 project.obj
+__pcstackBANK1 100 0 BANK1 1 cstackBANK1 project.obj
+_SSPADD FC8 0 ABS 0 - project.obj
+_SSPBUF FC9 0 ABS 0 - project.obj
+getAccelX@data 22 0 COMRAM 1 cstackCOMRAM project.obj
+___fttol@exp1 26 0 COMRAM 1 cstackCOMRAM project.obj
+___fttol@lval 22 0 COMRAM 1 cstackCOMRAM project.obj
+_TMR0IE 7F95 0 ABS 0 - project.obj
+_TMR0IF 7F92 0 ABS 0 - project.obj
+getAccelY@data 22 0 COMRAM 1 cstackCOMRAM project.obj
+___lltoft@c 20 0 COMRAM 1 cstackCOMRAM project.obj
+___ftpack 27BC 0 CODE 0 text38 project.obj
+_pidMillis 13F 0 BANK1 1 bssBANK1 project.obj
+getAccelZ@data 22 0 COMRAM 1 cstackCOMRAM project.obj
+___ftpack@arg 18 0 COMRAM 1 cstackCOMRAM project.obj
+___ftpack@exp 1B 0 COMRAM 1 cstackCOMRAM project.obj
+__end_of_ReadI2C 2F6C 0 CODE 0 text24 project.obj
+__end_of___ftpack 286A 0 CODE 0 text38 project.obj
+__Hbank0 0 0 ABS 0 bank0 project.obj
+__Hbank1 0 0 ABS 0 bank1 project.obj
+__Hbank2 0 0 ABS 0 bank2 project.obj
+__Hbank3 0 0 ABS 0 bank3 project.obj
+__Hbank4 0 0 ABS 0 bank4 project.obj
+__Hbank5 0 0 ABS 0 bank5 project.obj
+__Hcinit 0 0 ABS 0 cinit project.obj
+__Hconst 0 0 CONST 0 const project.obj
+exp@exponent 8A 0 BANK0 1 cstackBANK0 project.obj
+__Hidata 0 0 CODE 0 idata project.obj
+__Hidloc 0 0 IDLOC 0 idloc project.obj
+__Hnvbit 0 0 COMRAM 1 nvbit project.obj
+__Hparam 0 0 COMRAM 1 rparam project.obj
+__Hrdata 0 0 COMRAM 1 rdata project.obj
+__Hstack 0 0 STACK 2 stack project.obj
+__Htext0 0 0 ABS 0 text0 project.obj
+__Htext1 0 0 ABS 0 text1 project.obj
+__Htext2 0 0 ABS 0 text2 project.obj
+__Htext3 0 0 ABS 0 text3 project.obj
+__Htext4 0 0 ABS 0 text4 project.obj
+__Htext5 0 0 ABS 0 text5 project.obj
+__Htext6 0 0 ABS 0 text6 project.obj
+__Htext7 0 0 ABS 0 text7 project.obj
+__Htext8 0 0 ABS 0 text8 project.obj
+__Htext9 0 0 ABS 0 text9 project.obj
+_main$1198 CD 0 BANK0 1 cstackBANK0 project.obj
+computeAngle@dt 100 0 BANK1 1 cstackBANK1 project.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss project.obj
+__Hbigram 0 0 ABS 0 bigram project.obj
+__smallconst 600 0 SMALLCONST 0 smallconst startup.obj
+___lltoft 2D28 0 CODE 0 text17 project.obj
+__Hcomram 0 0 ABS 0 comram project.obj
+__Hconfig 300008 0 CONFIG 0 config project.obj
+__Lbank0 0 0 ABS 0 bank0 project.obj
+__Lbank1 0 0 ABS 0 bank1 project.obj
+__Lbank2 0 0 ABS 0 bank2 project.obj
+__Lbank3 0 0 ABS 0 bank3 project.obj
+__Lbank4 0 0 ABS 0 bank4 project.obj
+__Lbank5 0 0 ABS 0 bank5 project.obj
+__Lcinit 0 0 ABS 0 cinit project.obj
+__Lconst 0 0 CONST 0 const project.obj
+__Lidata 0 0 CODE 0 idata project.obj
+__Lidloc 0 0 IDLOC 0 idloc project.obj
+___ftadd@exp1 2F 0 COMRAM 1 cstackCOMRAM project.obj
+___ftadd@exp2 2E 0 COMRAM 1 cstackCOMRAM project.obj
+___ftadd@sign 2D 0 COMRAM 1 cstackCOMRAM project.obj
+__Lnvbit 0 0 COMRAM 1 nvbit project.obj
+__Lparam 0 0 COMRAM 1 rparam project.obj
+__Lrdata 0 0 COMRAM 1 rdata project.obj
+__Lstack 0 0 STACK 2 stack project.obj
+__Ltext0 0 0 ABS 0 text0 project.obj
+__Ltext1 0 0 ABS 0 text1 project.obj
+__Ltext2 0 0 ABS 0 text2 project.obj
+__Ltext3 0 0 ABS 0 text3 project.obj
+__Ltext4 0 0 ABS 0 text4 project.obj
+__Ltext5 0 0 ABS 0 text5 project.obj
+__Ltext6 0 0 ABS 0 text6 project.obj
+__Ltext7 0 0 ABS 0 text7 project.obj
+__Ltext8 0 0 ABS 0 text8 project.obj
+__Ltext9 0 0 ABS 0 text9 project.obj
+__Hfarbss 0 0 FARRAM 0 farbss project.obj
+__end_of___lltoft 2D84 0 CODE 0 text17 project.obj
+__Lintcode_body 0 0 ABS 0 intcode_body project.obj
+__Habs1 0 0 ABS 0 abs1 project.obj
+__Hdata 0 0 ABS 0 data project.obj
+__Hinit 16 0 CODE 0 init project.obj
+__Hrbit 0 0 COMRAM 1 rbit project.obj
+__Hrbss 0 0 COMRAM 1 rbss project.obj
+__Htemp 49 0 COMRAM 1 temp project.obj
+__Htext 0 0 ABS 0 text project.obj
+__Labs1 0 0 ABS 0 abs1 project.obj
+__Ldata 0 0 ABS 0 data project.obj
+__Linit 16 0 CODE 0 init project.obj
+__Lrbit 0 0 COMRAM 1 rbit project.obj
+__Lrbss 0 0 COMRAM 1 rbss project.obj
+__Ltemp 48 0 COMRAM 1 temp project.obj
+__Ltext 0 0 ABS 0 text project.obj
+_loopMillis 13B 0 BANK1 1 bssBANK1 project.obj
+___ftge 2574 0 CODE 0 text36 project.obj
+___lmul 2D84 0 CODE 0 text4 project.obj
+___wmul 2EE2 0 CODE 0 text28 project.obj
+__size_of_PICsetup 0 0 ABS 0 - project.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 project.obj
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 project.obj
+int$flags 48 0 COMRAM 1 temp project.obj
+_motorsUpdate 2702 0 CODE 0 text2 project.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM project.obj
+__Hintret 0 0 ABS 0 intret project.obj
+__Hirdata 0 0 CODE 0 irdata project.obj
+_BIT 238 -1F1 COMRAM 1 bitbssCOMRAM project.obj
+_GIE 7F97 0 ABS 0 - project.obj
+_PID 39 0 COMRAM 1 bssCOMRAM project.obj
+_PR2 FCB 0 ABS 0 - project.obj
+_RA0 7C00 0 ABS 0 - project.obj
+_RB2 7C0A 0 ABS 0 - project.obj
+_RB3 7C0B 0 ABS 0 - project.obj
+_RB4 7C0C 0 ABS 0 - project.obj
+_RB5 7C0D 0 ABS 0 - project.obj
+__S0 300008 0 ABS 0 - project.obj
+__S1 14A 0 ABS 0 - project.obj
+__S2 0 0 ABS 0 - project.obj
+_exp 10A4 0 CODE 0 text10 project.obj
+_log 1E64 0 CODE 0 text9 project.obj
+_map 1FA6 0 CODE 0 text3 project.obj
+_pow 1A1C 0 CODE 0 text8 project.obj
+DelayMs@i 19 0 COMRAM 1 cstackCOMRAM project.obj
+_exp$1205 87 0 BANK0 1 cstackBANK0 project.obj
+__CFG_OSC$IRCIO7 0 0 ABS 0 - project.obj
+__size_of_IdleI2C 0 0 ABS 0 - project.obj
+getAccelZ@dataH 1E 0 COMRAM 1 cstackCOMRAM project.obj
+getAccelZ@dataL 20 0 COMRAM 1 cstackCOMRAM project.obj
+__CFG_PBADEN$OFF 0 0 ABS 0 - project.obj
+eval_poly@res 75 0 BANK0 1 cstackBANK0 project.obj
+___awtoft@c 20 0 COMRAM 1 cstackCOMRAM project.obj
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM project.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata project.obj
+__Hnvrram 0 0 COMRAM 1 nvrram project.obj
+_errore E0 0 BANK0 1 bssBANK0 project.obj
+__end_of_exp 12DA 0 CODE 0 text10 project.obj
+__end_of_log 1FA6 0 CODE 0 text9 project.obj
+__end_of_map 20CC 0 CODE 0 text3 project.obj
+__end_of_pow 1BC6 0 CODE 0 text8 project.obj
+int_func 263C 0 CODE 0 intcode_body project.obj
+__size_of_getGyroY 0 0 ABS 0 - project.obj
+_DelayMs 2EB8 0 CODE 0 text30 project.obj
+__Lintentry 0 0 ABS 0 intentry project.obj
+__Hramtop 600 0 RAM 0 ramtop project.obj
+__Hrparam 0 0 COMRAM 1 rparam project.obj
+__powers_ 650 0 SMALLCONST 0 smallconst project.obj
+_PIDupdate$403 75 0 BANK0 1 cstackBANK0 project.obj
+_PIDupdate$404 78 0 BANK0 1 cstackBANK0 project.obj
+_PIDupdate$405 7B 0 BANK0 1 cstackBANK0 project.obj
+_PIDupdate$406 7E 0 BANK0 1 cstackBANK0 project.obj
+__pdataBANK0 E7 0 BANK0 1 dataBANK0 project.obj
+__activetblptr 2 0 ABS 0 - project.obj
+__size_of_motorsUpdate 0 0 ABS 0 - project.obj
+__Hstruct 0 0 COMRAM 1 struct project.obj
+__size_of___ftge 0 0 ABS 0 - project.obj
+__size_of___lmul 0 0 ABS 0 - project.obj
+__size_of___wmul 0 0 ABS 0 - project.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 project.obj
+__LbssBANK1 0 0 ABS 0 bssBANK1 project.obj
+__Htext10 0 0 ABS 0 text10 project.obj
+__Htext11 0 0 ABS 0 text11 project.obj
+__Htext12 0 0 ABS 0 text12 project.obj
+__Htext13 0 0 ABS 0 text13 project.obj
+__Htext14 0 0 ABS 0 text14 project.obj
+__Htext15 0 0 ABS 0 text15 project.obj
+__Htext16 0 0 ABS 0 text16 project.obj
+__Htext17 0 0 ABS 0 text17 project.obj
+__Htext18 0 0 ABS 0 text18 project.obj
+__Htext19 0 0 ABS 0 text19 project.obj
+__Htext20 0 0 ABS 0 text20 project.obj
+__Htext21 0 0 ABS 0 text21 project.obj
+__Htext22 0 0 ABS 0 text22 project.obj
+__Htext23 0 0 ABS 0 text23 project.obj
+__Htext24 0 0 ABS 0 text24 project.obj
+__Htext25 0 0 ABS 0 text25 project.obj
+__Htext26 0 0 ABS 0 text26 project.obj
+__Htext27 0 0 ABS 0 text27 project.obj
+__Htext28 0 0 ABS 0 text28 project.obj
+__Htext29 0 0 ABS 0 text29 project.obj
+__Htext30 0 0 ABS 0 text30 project.obj
+__Htext31 0 0 ABS 0 text31 project.obj
+__Htext32 0 0 ABS 0 text32 project.obj
+__Htext33 0 0 ABS 0 text33 project.obj
+__Htext34 0 0 ABS 0 text34 project.obj
+__Htext35 0 0 ABS 0 text35 project.obj
+__Htext36 0 0 ABS 0 text36 project.obj
+__Htext37 0 0 ABS 0 text37 project.obj
+__Htext38 0 0 ABS 0 text38 project.obj
+__Htext39 0 0 ABS 0 text39 project.obj
+__Htext40 0 0 ABS 0 text40 project.obj
+__Htext42 0 0 ABS 0 text42 project.obj
+?___altoft 27 0 COMRAM 1 cstackCOMRAM project.obj
+?___awtoft 20 0 COMRAM 1 cstackCOMRAM project.obj
+_PICsetup 2F2C 0 CODE 0 text39 project.obj
+__end_of__powers_ 677 0 SMALLCONST 0 smallconst project.obj
+floor@expon 7B 0 BANK0 1 cstackBANK0 project.obj
+___altoft@exp 2F 0 COMRAM 1 cstackCOMRAM project.obj
+_millis D3 0 BANK0 1 bssBANK0 project.obj
+atan@val_squared BB 0 BANK0 1 cstackBANK0 project.obj
+_my_ISR 8 0 CODE 0 intcode project.obj
+computeAngle@rawAccX 11F 0 BANK1 1 cstackBANK1 project.obj
+computeAngle@rawAccY 121 0 BANK1 1 cstackBANK1 project.obj
+computeAngle@rawAccZ 123 0 BANK1 1 cstackBANK1 project.obj
+__size_of_WriteI2C 0 0 ABS 0 - project.obj
+__ptext10 10A4 0 CODE 0 text10 project.obj
+__ptext11 20CC 0 CODE 0 text11 project.obj
+__ptext12 21E0 0 CODE 0 text12 project.obj
+__ptext13 2916 0 CODE 0 text13 project.obj
+__ptext14 2BD6 0 CODE 0 text14 project.obj
+__ptext15 2DDA 0 CODE 0 text15 project.obj
+__ptext16 2E26 0 CODE 0 text16 project.obj
+__ptext17 2D28 0 CODE 0 text17 project.obj
+__ptext18 29A6 0 CODE 0 text18 project.obj
+__ptext19 2A32 0 CODE 0 text19 project.obj
+__ptext20 2ABE 0 CODE 0 text20 project.obj
+__ptext21 2B4A 0 CODE 0 text21 project.obj
+__ptext22 2E8E 0 CODE 0 text22 project.obj
+__ptext23 2F6C 0 CODE 0 text23 project.obj
+__ptext24 2F50 0 CODE 0 text24 project.obj
+__ptext25 14C8 0 CODE 0 text25 project.obj
+__ptext26 2E5E 0 CODE 0 text26 project.obj
+__ptext27 23C8 0 CODE 0 text27 project.obj
+__ptext28 2EE2 0 CODE 0 text28 project.obj
+__ptext29 1D18 0 CODE 0 text29 project.obj
+__ptext30 2EB8 0 CODE 0 text30 project.obj
+__ptext31 2F90 0 CODE 0 text31 project.obj
+__ptext32 D3A 0 CODE 0 text32 project.obj
+__ptext33 22D4 0 CODE 0 text33 project.obj
+__ptext34 2F08 0 CODE 0 text34 project.obj
+__ptext35 1BC6 0 CODE 0 text35 project.obj
+__ptext36 2574 0 CODE 0 text36 project.obj
+__ptext37 1870 0 CODE 0 text37 project.obj
+__ptext38 27BC 0 CODE 0 text38 project.obj
+__ptext39 2F2C 0 CODE 0 text39 project.obj
+__ptext40 2F7E 0 CODE 0 text40 project.obj
+__ptext42 2CC2 0 CODE 0 text42 project.obj
+computeAngle@mode 103 0 BANK1 1 cstackBANK1 project.obj
+___aldiv 24A8 0 CODE 0 text5 project.obj
+___ftadd 1870 0 CODE 0 text37 project.obj
+___ftdiv 1D18 0 CODE 0 text29 project.obj
+___ftmul 1BC6 0 CODE 0 text35 project.obj
+___ftneg 2F08 0 CODE 0 text34 project.obj
+___ftsub 2DDA 0 CODE 0 text15 project.obj
+___fttol 22D4 0 CODE 0 text33 project.obj
+motorsUpdate@torque 80 0 BANK0 1 cstackBANK0 project.obj
+__pintcode_body 263C 0 CODE 0 intcode_body project.obj
+___llmod 2CC2 0 CODE 0 text42 project.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss project.obj
+__Lbigram 0 0 ABS 0 bigram project.obj
+___lmul@multiplier 18 0 COMRAM 1 cstackCOMRAM project.obj
+__end_of_PICsetup 2F50 0 CODE 0 text39 project.obj
+?_atan B1 0 BANK0 1 cstackBANK0 project.obj
+?_fabs 23 0 COMRAM 1 cstackCOMRAM project.obj
+?_sqrt 9E 0 BANK0 1 cstackBANK0 project.obj
+__Lcomram 0 0 ABS 0 comram project.obj
+__Lconfig 300000 0 CONFIG 0 config project.obj
+?___ftpack 18 0 COMRAM 1 cstackCOMRAM project.obj
+_sensorSetup 286A 0 CODE 0 text1 project.obj
+__end_of_motorsUpdate 27BC 0 CODE 0 text2 project.obj
+___wmul@multiplier 18 0 COMRAM 1 cstackCOMRAM project.obj
+__Lfarbss 0 0 FARRAM 0 farbss project.obj
+sqrt@og A4 0 BANK0 1 cstackBANK0 project.obj
+__Lfardata 0 0 FARRAM 0 fardata project.obj
+map@in_max 68 0 BANK0 1 cstackBANK0 project.obj
+map@in_min 64 0 BANK0 1 cstackBANK0 project.obj
+WriteI2C@data_out 19 0 COMRAM 1 cstackCOMRAM project.obj
+_getGyroY 29A6 0 CODE 0 text18 project.obj
+stackhi 5FF 0 ABS 0 - startup.obj
+stacklo 14A 0 ABS 0 - startup.obj
+__Lintcode 8 0 CODE 0 intcode project.obj
+?___lltoft 20 0 COMRAM 1 cstackCOMRAM project.obj
+__end_of_IdleI2C 2F7E 0 CODE 0 text23 project.obj
+__Lintret 0 0 ABS 0 intret project.obj
+__Lirdata 0 0 CODE 0 irdata project.obj
+__end_of_eval_poly 24A8 0 CODE 0 text27 project.obj
+__CFG_LVP$OFF 0 0 ABS 0 - project.obj
+getGyroY@data 22 0 COMRAM 1 cstackCOMRAM project.obj
+__size_of_eval_poly 0 0 ABS 0 - project.obj
+floor@i 78 0 BANK0 1 cstackBANK0 project.obj
+floor@x 75 0 BANK0 1 cstackBANK0 project.obj
+__Lspace_0 0 0 ABS 0 - project.obj
+__Lspace_1 0 0 ABS 0 - project.obj
+__Lspace_2 0 0 ABS 0 - project.obj
+PIDupdate@precErrore 33 0 COMRAM 1 bssCOMRAM project.obj
+___ftmul@cntr 6A 0 BANK0 1 cstackBANK0 project.obj
+__pbssCOMRAM 33 0 COMRAM 1 bssCOMRAM project.obj
+___ftmul@sign 6B 0 BANK0 1 cstackBANK0 project.obj
+__end_of_getGyroY 2A32 0 CODE 0 text18 project.obj
+__HbitbssCOMRAM 0 0 ABS 0 bitbssCOMRAM project.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 project.obj
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 project.obj
+__size_of_my_ISR 0 0 ABS 0 - project.obj
+__Lend_init 16 0 CODE 0 end_init project.obj
+DelayMs@cnt 18 0 COMRAM 1 cstackCOMRAM project.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM project.obj
+end_of_initialization 2CB4 0 CODE 0 cinit project.obj
+_WriteI2C 2E8E 0 CODE 0 text22 project.obj
+atan@recip BA 0 BANK0 1 cstackBANK0 project.obj
+__Lnvrram 0 0 COMRAM 1 nvrram project.obj
+__Hintentry 0 0 ABS 0 intentry project.obj
+map@out_max 70 0 BANK0 1 cstackBANK0 project.obj
+map@out_min 6C 0 BANK0 1 cstackBANK0 project.obj
+?___aldiv 24 0 COMRAM 1 cstackCOMRAM project.obj
+_eval_poly 23C8 0 CODE 0 text27 project.obj
+?___ftadd 24 0 COMRAM 1 cstackCOMRAM project.obj
+?___ftdiv 75 0 BANK0 1 cstackBANK0 project.obj
+?___ftmul 60 0 BANK0 1 cstackBANK0 project.obj
+?___ftneg 20 0 COMRAM 1 cstackCOMRAM project.obj
+?___ftsub 60 0 BANK0 1 cstackBANK0 project.obj
+?___fttol 18 0 COMRAM 1 cstackCOMRAM project.obj
+?___llmod 1 0 COMRAM 1 cstackCOMRAM project.obj
+__Hreset_vec 4 0 CODE 0 reset_vec project.obj
+ldexp@value 78 0 BANK0 1 cstackBANK0 project.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 project.obj
+__HbssBANK1 0 0 ABS 0 bssBANK1 project.obj
+__end_of_WriteI2C 2EB8 0 CODE 0 text22 project.obj
+_ReadI2C 2F50 0 CODE 0 text24 project.obj
+__Lramtop 600 0 RAM 0 ramtop project.obj
+__size_of_PWMSetup 0 0 ABS 0 - project.obj
+__Lrparam 0 0 COMRAM 1 rparam project.obj
+__pcinit 2C4E 0 CODE 0 cinit project.obj
+_SSPCON1bits FC6 0 ABS 0 - project.obj
+_SSPCON2bits FC5 0 ABS 0 - project.obj
+___lltoft@exp 28 0 COMRAM 1 cstackCOMRAM project.obj
+__ptext0 12DA 0 CODE 0 text0 project.obj
+__ptext1 286A 0 CODE 0 text1 project.obj
+__ptext2 2702 0 CODE 0 text2 project.obj
+__ptext3 1FA6 0 CODE 0 text3 project.obj
+__ptext4 2D84 0 CODE 0 text4 project.obj
+__ptext5 24A8 0 CODE 0 text5 project.obj
+__ptext6 6DC 0 CODE 0 text6 project.obj
+__ptext7 16B4 0 CODE 0 text7 project.obj
+__ptext8 1A1C 0 CODE 0 text8 project.obj
+__ptext9 1E64 0 CODE 0 text9 project.obj
+__Lstruct 0 0 COMRAM 1 struct project.obj
+atan@coeff_a 6B3 0 SMALLCONST 0 smallconst project.obj
+atan@coeff_b 6C5 0 SMALLCONST 0 smallconst project.obj
+__Ltext10 0 0 ABS 0 text10 project.obj
+__Ltext11 0 0 ABS 0 text11 project.obj
+__Ltext12 0 0 ABS 0 text12 project.obj
+__Ltext13 0 0 ABS 0 text13 project.obj
+__Ltext14 0 0 ABS 0 text14 project.obj
+__Ltext15 0 0 ABS 0 text15 project.obj
+__Ltext16 0 0 ABS 0 text16 project.obj
+__Ltext17 0 0 ABS 0 text17 project.obj
+__Ltext18 0 0 ABS 0 text18 project.obj
+__Ltext19 0 0 ABS 0 text19 project.obj
+__Ltext20 0 0 ABS 0 text20 project.obj
+__Ltext21 0 0 ABS 0 text21 project.obj
+__Ltext22 0 0 ABS 0 text22 project.obj
+__Ltext23 0 0 ABS 0 text23 project.obj
+__Ltext24 0 0 ABS 0 text24 project.obj
+__Ltext25 0 0 ABS 0 text25 project.obj
+__Ltext26 0 0 ABS 0 text26 project.obj
+__Ltext27 0 0 ABS 0 text27 project.obj
+__Ltext28 0 0 ABS 0 text28 project.obj
+__Ltext29 0 0 ABS 0 text29 project.obj
+__Ltext30 0 0 ABS 0 text30 project.obj
+__Ltext31 0 0 ABS 0 text31 project.obj
+__Ltext32 0 0 ABS 0 text32 project.obj
+__Ltext33 0 0 ABS 0 text33 project.obj
+__Ltext34 0 0 ABS 0 text34 project.obj
+__Ltext35 0 0 ABS 0 text35 project.obj
+__Ltext36 0 0 ABS 0 text36 project.obj
+__Ltext37 0 0 ABS 0 text37 project.obj
+__Ltext38 0 0 ABS 0 text38 project.obj
+__Ltext39 0 0 ABS 0 text39 project.obj
+__Ltext40 0 0 ABS 0 text40 project.obj
+__Ltext42 0 0 ABS 0 text42 project.obj
+__ramtop 600 0 RAM 0 ramtop startup.obj
+___aldiv@dividend 24 0 COMRAM 1 cstackCOMRAM project.obj
+_currentAngle DD 0 BANK0 1 bssBANK0 project.obj
+atan@val BE 0 BANK0 1 cstackBANK0 project.obj
+__Lpowerup 16 0 CODE 0 powerup project.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data project.obj
+__psmallconst 600 0 SMALLCONST 0 smallconst project.obj
+exp@sign 8C 0 BANK0 1 cstackBANK0 project.obj
+__Lreset_vec 0 0 CODE 0 reset_vec project.obj
+?_getAccelX 1A 0 COMRAM 1 cstackCOMRAM project.obj
+?_getAccelY 1A 0 COMRAM 1 cstackCOMRAM project.obj
+?_getAccelZ 1A 0 COMRAM 1 cstackCOMRAM project.obj
+eval_poly@d 6F 0 BANK0 1 cstackBANK0 project.obj
+eval_poly@n 71 0 BANK0 1 cstackBANK0 project.obj
+eval_poly@x 6C 0 BANK0 1 cstackBANK0 project.obj
+__end_of_OpenI2C_StSpeed 2F90 0 CODE 0 text40 project.obj
+___param_bank 10 0 ABS 0 - project.obj
+__CFG_WDT$OFF 0 0 ABS 0 - project.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata project.obj
+___ftmul@exp 66 0 BANK0 1 cstackBANK0 project.obj
+__end_of__initialization 2CB4 0 CODE 0 cinit project.obj
+__Libigdata 0 0 CODE 0 ibigdata project.obj
+frexp@value 18 0 COMRAM 1 cstackCOMRAM project.obj
+?_floor 75 0 BANK0 1 cstackBANK0 project.obj
+?_frexp 18 0 COMRAM 1 cstackCOMRAM project.obj
+__pidataBANK0 2FA5 0 CODE 0 idataBANK0 project.obj
+?_ldexp 78 0 BANK0 1 cstackBANK0 project.obj
+__Lclrtext 0 0 ABS 0 clrtext project.obj
+___altoft@sign 30 0 COMRAM 1 cstackCOMRAM project.obj
+_computeAngle$1189 107 0 BANK1 1 cstackBANK1 project.obj
+_computeAngle$1190 10A 0 BANK1 1 cstackBANK1 project.obj
+_computeAngle$1191 10D 0 BANK1 1 cstackBANK1 project.obj
+_computeAngle$1192 110 0 BANK1 1 cstackBANK1 project.obj
+_computeAngle$1193 113 0 BANK1 1 cstackBANK1 project.obj
+_computeAngle$1194 116 0 BANK1 1 cstackBANK1 project.obj
+_computeAngle$1195 119 0 BANK1 1 cstackBANK1 project.obj
+_computeAngle$1196 11C 0 BANK1 1 cstackBANK1 project.obj
+___ftpack@sign 1C 0 COMRAM 1 cstackCOMRAM project.obj
+___lmul@product 20 0 COMRAM 1 cstackCOMRAM project.obj
+___lmul@multiplicand 1C 0 COMRAM 1 cstackCOMRAM project.obj
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM project.obj
+___ftdiv@cntr 7E 0 BANK0 1 cstackBANK0 project.obj
+___ftdiv@sign 83 0 BANK0 1 cstackBANK0 project.obj
+_PWMSetup 2F90 0 CODE 0 text31 project.obj
+_PIDupdate$1197 8A 0 BANK0 1 cstackBANK0 project.obj
+_SSPCON1 FC6 0 ABS 0 - project.obj
+_SSPCON2 FC5 0 ABS 0 - project.obj
+_SSPSTAT FC7 0 ABS 0 - project.obj
+__Hend_init 1A 0 CODE 0 end_init project.obj
+___llmod@dividend 1 0 COMRAM 1 cstackCOMRAM project.obj
+___aldiv@counter 2C 0 COMRAM 1 cstackCOMRAM project.obj
+getAccelX@dataH 1E 0 COMRAM 1 cstackCOMRAM project.obj
+getAccelX@dataL 20 0 COMRAM 1 cstackCOMRAM project.obj
+___llmod@counter 9 0 COMRAM 1 cstackCOMRAM project.obj
+__end_of_atan 16B4 0 CODE 0 text25 project.obj
+__end_of_fabs 2E8E 0 CODE 0 text26 project.obj
+__end_of_main 14C8 0 CODE 0 text0 project.obj
+__end_of_sqrt 1870 0 CODE 0 text7 project.obj
+__pintcode 8 0 CODE 0 intcode project.obj
+_BRG16 7DC3 0 ABS 0 - project.obj
+__end_of_dpowers 629 0 SMALLCONST 0 smallconst project.obj
+log@exponent 7B 0 BANK0 1 cstackBANK0 project.obj
+__end_of_PWMSetup 2F9C 0 CODE 0 text31 project.obj
+__end_of_floor 22D4 0 CODE 0 text12 project.obj
+__end_of_frexp 29A6 0 CODE 0 text13 project.obj
+_PLLEN 7CDE 0 ABS 0 - project.obj
+__end_of_ldexp 21E0 0 CODE 0 text11 project.obj
+_RCSTA FAB 0 ABS 0 - project.obj
+_SPBRG FAF 0 ABS 0 - project.obj
+_T0CON FD5 0 ABS 0 - project.obj
+_T2CON FCA 0 ABS 0 - project.obj
+_TRISA F92 0 ABS 0 - project.obj
+_TRISB F93 0 ABS 0 - project.obj
+_TRISC F94 0 ABS 0 - project.obj
+_TXREG FAD 0 ABS 0 - project.obj
+_TXSTA FAC 0 ABS 0 - project.obj
+_main$419 D0 0 BANK0 1 cstackBANK0 project.obj
+__HRAM 0 0 ABS 0 - project.obj
+__Hbss 0 0 RAM 1 bss project.obj
+__Hram 0 0 ABS 0 ram project.obj
+__Hsfr 0 0 ABS 0 sfr project.obj
+__LRAM 1 0 ABS 0 - project.obj
+__Lbss 0 0 RAM 1 bss project.obj
+__Lram 0 0 ABS 0 ram project.obj
+__Lsfr 0 0 ABS 0 sfr project.obj
+_alpha EA 0 BANK0 1 dataBANK0 project.obj
+DelayMs@_dcnt 1A 0 COMRAM 1 cstackCOMRAM project.obj
+_errno 3B 0 COMRAM 1 bssCOMRAM project.obj
+_floor 21E0 0 CODE 0 text12 project.obj
+_frexp 2916 0 CODE 0 text13 project.obj
+_gyroY 36 0 COMRAM 1 bssCOMRAM project.obj
+_ldexp 20CC 0 CODE 0 text11 project.obj
+ldexp@newexp 7B 0 BANK0 1 cstackBANK0 project.obj
+?_getGyroY 1A 0 COMRAM 1 cstackCOMRAM project.obj
+_SSPSTATbits FC7 0 ABS 0 - project.obj
+_offsetAngle E3 0 BANK0 1 bssBANK0 project.obj
+_CCP1CON FBD 0 ABS 0 - project.obj
+___fttol@sign1 21 0 COMRAM 1 cstackCOMRAM project.obj
+exp@coeff 67A 0 SMALLCONST 0 smallconst project.obj
+__size_of_exp 0 0 ABS 0 - project.obj
+__size_of_log 0 0 ABS 0 - project.obj
+__size_of_map 0 0 ABS 0 - project.obj
+__size_of_pow 0 0 ABS 0 - project.obj
+__HdataBANK0 0 0 ABS 0 dataBANK0 project.obj
+_OpenI2C_StSpeed 2F7E 0 CODE 0 text40 project.obj
+__LbitbssCOMRAM 0 0 ABS 0 bitbssCOMRAM project.obj
+atan@f B1 0 BANK0 1 cstackBANK0 project.obj
+atan@x B7 0 BANK0 1 cstackBANK0 project.obj
+atan@y B4 0 BANK0 1 cstackBANK0 project.obj
+__initialization 2C4E 0 CODE 0 cinit project.obj
+__pbssBANK0 D3 0 BANK0 1 bssBANK0 project.obj
+__pbssBANK1 127 0 BANK1 1 bssBANK1 project.obj
+__pdataCOMRAM 3E 0 COMRAM 1 dataCOMRAM project.obj
+getGyroY@dataH 1E 0 COMRAM 1 cstackCOMRAM project.obj
+getGyroY@dataL 20 0 COMRAM 1 cstackCOMRAM project.obj
+__end_ofexp@coeff 698 0 SMALLCONST 0 smallconst project.obj
+__end_of_PIDupdate 10A4 0 CODE 0 text32 project.obj
+__Hfardata 0 0 FARRAM 0 fardata project.obj
+___wmul@product 1C 0 COMRAM 1 cstackCOMRAM project.obj
+__Hsmallconst 6DC 0 SMALLCONST 0 smallconst project.obj
+__size_of_PIDupdate 0 0 ABS 0 - project.obj
+__Lifardata 0 0 CODE 0 ifardata project.obj
+fabs@d 23 0 COMRAM 1 cstackCOMRAM project.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs project.obj
+__Hintcode 16 0 CODE 0 intcode project.obj
+___ftmul@f3_as_product 67 0 BANK0 1 cstackBANK0 project.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text6 0 6DC 6DC 28CF 1
+cstackCOMRAM 1 1 1 48 1
+cstackBANK0 1 60 60 8D 1
+cstackBANK1 1 100 100 4A 1
+reset_vec 0 0 0 4 1
+intcode 0 8 8 12 1
+smallconst 0 600 600 DC 1
+config 0 300000 300000 8 1

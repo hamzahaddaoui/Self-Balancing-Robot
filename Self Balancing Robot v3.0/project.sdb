@@ -1,0 +1,734 @@
+[p LITE_MODE AUTOSTATIC LFSROK ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F2580 ]
+[d frameptr 4065 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"42 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\atan.c
+[v _atan atan `(d  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"32 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"409 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\doprnt.c
+[v _fround fround `(d  1 s 3 fround ]
+"425
+[v _scale scale `(d  1 s 3 scale ]
+"492
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\evalpoly.c
+[v _eval_poly eval_poly `(d  1 e 3 0 ]
+"12 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\exp.c
+[v _exp exp `(d  1 e 3 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fabs.c
+[v _fabs fabs `(d  1 e 3 0 ]
+"60 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fldivl.c
+[v __div_to_l_ _div_to_l_ `(ul  1 e 4 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"13 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\floor.c
+[v _floor floor `(d  1 e 3 0 ]
+"254 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+[v _frexp frexp `(d  1 e 3 0 ]
+"277
+[v _ldexp ldexp `(d  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"60 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdivl.c
+[v __tdiv_to_l_ _tdiv_to_l_ `(ul  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"20 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"35 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\log.c
+[v _log log `(d  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\pow.c
+[v _pow pow `(d  1 e 3 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"9 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcsqrt.c
+[v _sqrt sqrt `(d  1 e 3 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"11 D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\delay.c
+[v _DelayMs DelayMs `(v  1 e 1 0 ]
+"48 D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\i2c.c
+[v _IdleI2C IdleI2C `(v  1 e 1 0 ]
+"59
+[v _OpenI2C_StSpeed OpenI2C_StSpeed `(v  1 e 1 0 ]
+"67
+[v _ReadI2C ReadI2C `(uc  1 e 1 0 ]
+"75
+[v _WriteI2C WriteI2C `(uc  1 e 1 0 ]
+"17 D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+[v _PICsetup PICsetup `(v  1 e 1 0 ]
+"34
+[v _main main `(v  1 e 1 0 ]
+"57
+[v _my_ISR my_ISR `II(i  1 e 2 0 ]
+"4 D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.h
+[v _map map `(l  1 e 4 0 ]
+"38 D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+[v _sensorSetup sensorSetup `(v  1 e 1 0 ]
+"76
+[v _getGyroY getGyroY `(i  1 e 2 0 ]
+"100
+[v _getAccelX getAccelX `(i  1 e 2 0 ]
+"124
+[v _getAccelY getAccelY `(i  1 e 2 0 ]
+"148
+[v _getAccelZ getAccelZ `(i  1 e 2 0 ]
+"172
+[v _computeAngle computeAngle `(v  1 e 1 0 ]
+"1 D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+[v _PWMSetup PWMSetup `(v  1 e 1 0 ]
+"7
+[v _PIDupdate PIDupdate `(v  1 e 1 0 ]
+"29
+[v _motorsUpdate motorsUpdate `(v  1 e 1 0 ]
+"28988 C:\Program Files (x86)\Microchip\xc8\v1.38\include\pic18f2580.h
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"29209
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"29430
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"30503
+[v _RCSTA RCSTA `VEuc  1 e 1 @4011 ]
+"30712
+[v _TXSTA TXSTA `VEuc  1 e 1 @4012 ]
+"31009
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"31031
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"31379
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @4029 ]
+"31448
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @4030 ]
+"31756
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @4037 ]
+[s S184 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"31773
+[u S193 . 1 `S184 1 . 1 0 ]
+[v _SSPCON2bits SSPCON2bits `VES193  1 e 1 @4037 ]
+"31817
+[v _SSPCON1 SSPCON1 `VEuc  1 e 1 @4038 ]
+[s S206 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"31837
+[s S212 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[u S217 . 1 `S206 1 . 1 0 `S212 1 . 1 0 ]
+[v _SSPCON1bits SSPCON1bits `VES217  1 e 1 @4038 ]
+"31886
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @4039 ]
+[s S22 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+"31980
+[s S25 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S28 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S37 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S42 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S48 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S53 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+[s S56 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S59 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S64 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S69 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S74 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 DA 1 0 :1:5 
+]
+[s S77 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW 1 0 :1:2 
+]
+[s S80 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 START 1 0 :1:3 
+]
+[s S83 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 STOP 1 0 :1:4 
+]
+[s S86 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+]
+[s S89 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_A 1 0 :1:5 
+]
+[u S92 . 1 `S22 1 . 1 0 `S25 1 . 1 0 `S28 1 . 1 0 `S37 1 . 1 0 `S42 1 . 1 0 `S48 1 . 1 0 `S53 1 . 1 0 `S56 1 . 1 0 `S59 1 . 1 0 `S64 1 . 1 0 `S69 1 . 1 0 `S74 1 . 1 0 `S77 1 . 1 0 `S80 1 . 1 0 `S83 1 . 1 0 `S86 1 . 1 0 `S89 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES92  1 e 1 @4039 ]
+"32144
+[v _SSPADD SSPADD `VEuc  1 e 1 @4040 ]
+"32150
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @4041 ]
+"32156
+[v _T2CON T2CON `VEuc  1 e 1 @4042 ]
+"32226
+[v _PR2 PR2 `VEuc  1 e 1 @4043 ]
+"32900
+[v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
+"32976
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+"33051
+"33051
+[v _TMR0 TMR0 `VEus  1 e 2 @4054 ]
+"35290
+[v _BRG16 BRG16 `VEb  1 e 0 @32195 ]
+"35292
+[v _BRGH BRGH `VEb  1 e 0 @32098 ]
+"35692
+[v _GIE GIE `VEb  1 e 0 @32663 ]
+"36022
+[v _PLLEN PLLEN `VEb  1 e 0 @31966 ]
+"36036
+[v _RA0 RA0 `VEb  1 e 0 @31744 ]
+"36056
+[v _RB2 RB2 `VEb  1 e 0 @31754 ]
+"36058
+[v _RB3 RB3 `VEb  1 e 0 @31755 ]
+"36060
+[v _RB4 RB4 `VEb  1 e 0 @31756 ]
+"36062
+[v _RB5 RB5 `VEb  1 e 0 @31757 ]
+"36108
+[v _RCIE RCIE `VEb  1 e 0 @31981 ]
+"37820
+[v _SPEN SPEN `VEb  1 e 0 @32095 ]
+"37960
+[v _TMR0IE TMR0IE `VEb  1 e 0 @32661 ]
+"37962
+[v _TMR0IF TMR0IF `VEb  1 e 0 @32658 ]
+"38760
+[v _TXEN TXEN `VEb  1 e 0 @32101 ]
+"38766
+[v _TXIF TXIF `VEb  1 e 0 @31988 ]
+"354 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\doprnt.c
+[v _dpowers dpowers `C[10]ul  1 s 40 dpowers ]
+"3 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\errno.c
+[v _errno errno `i  1 e 2 0 ]
+"7 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\powers.c
+[v __powers_ _powers_ `C[13]d  1 e 39 0 ]
+"39
+[v __npowers_ _npowers_ `C[13]d  1 e 39 0 ]
+"14 D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.h
+[v _RADtoDEG RADtoDEG `Cf  1 e 3 0 ]
+"15
+[v _alpha alpha `f  1 e 3 0 ]
+"17
+[v _millis millis `ul  1 e 4 0 ]
+"18
+[v _sensMillis sensMillis `ul  1 e 4 0 ]
+"20
+[v _loopMillis loopMillis `ul  1 e 4 0 ]
+"22
+[v _i i `uc  1 e 1 0 ]
+"29
+[v _accX accX `f  1 e 3 0 ]
+"30
+[v _gyroY gyroY `f  1 e 3 0 ]
+"31
+[v _offsetAngle offsetAngle `f  1 e 3 0 ]
+"32
+[v _currentAngle currentAngle `f  1 e 3 0 ]
+"35
+[v _errore errore `f  1 e 3 0 ]
+"36
+[v _PID PID `i  1 e 2 0 ]
+"37
+[v _K K `f  1 e 3 0 ]
+"38
+[v _kP kP `f  1 e 3 0 ]
+"39
+[v _kI kI `f  1 e 3 0 ]
+"40
+[v _kD kD `f  1 e 3 0 ]
+"34 D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"55
+} 0
+"38 D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+[v _sensorSetup sensorSetup `(v  1 e 1 0 ]
+{
+"73
+} 0
+"29 D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+[v _motorsUpdate motorsUpdate `(v  1 e 1 0 ]
+{
+[v motorsUpdate@torque torque `i  1 p 2 32 ]
+"50
+} 0
+"4 D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.h
+[v _map map `(l  1 e 4 0 ]
+{
+[v map@x x `l  1 p 4 0 ]
+[v map@in_min in_min `l  1 p 4 4 ]
+[v map@in_max in_max `l  1 p 4 8 ]
+[v map@out_min out_min `l  1 p 4 12 ]
+[v map@out_max out_max `l  1 p 4 16 ]
+"6
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+{
+"17
+[v ___lmul@product product `ul  1 a 4 31 ]
+"15
+[v ___lmul@multiplier multiplier `ul  1 p 4 23 ]
+[v ___lmul@multiplicand multiplicand `ul  1 p 4 27 ]
+"129
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"11
+[v ___aldiv@quotient quotient `l  1 a 4 45 ]
+"12
+[v ___aldiv@sign sign `uc  1 a 1 44 ]
+[v ___aldiv@counter counter `uc  1 a 1 43 ]
+"8
+[v ___aldiv@dividend dividend `l  1 p 4 35 ]
+[v ___aldiv@divisor divisor `l  1 p 4 39 ]
+"42
+} 0
+"172 D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+[v _computeAngle computeAngle `(v  1 e 1 0 ]
+{
+[v computeAngle@mode mode `uc  1 a 1 wreg ]
+"174
+[v computeAngle@angleSum angleSum `f  1 a 3 4 ]
+"175
+[v computeAngle@dt dt `f  1 a 3 0 ]
+"173
+[v computeAngle@rawGyroY rawGyroY `i  1 a 2 37 ]
+[v computeAngle@rawAccZ rawAccZ `i  1 a 2 35 ]
+[v computeAngle@rawAccY rawAccY `i  1 a 2 33 ]
+[v computeAngle@rawAccX rawAccX `i  1 a 2 31 ]
+"172
+[v computeAngle@mode mode `uc  1 a 1 wreg ]
+"177
+[v computeAngle@mode mode `uc  1 a 1 3 ]
+"213
+} 0
+"9 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcsqrt.c
+[v _sqrt sqrt `(d  1 e 3 0 ]
+{
+"134
+[v sqrt@x x `d  1 a 3 78 ]
+[v sqrt@q q `d  1 a 3 75 ]
+[v sqrt@z z `d  1 a 3 71 ]
+[v sqrt@og og `d  1 a 3 68 ]
+"135
+[v sqrt@i i `uc  1 a 1 74 ]
+"9
+[v sqrt@a a `d  1 p 3 62 ]
+"159
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\pow.c
+[v _pow pow `(d  1 e 3 0 ]
+{
+"8
+[v pow@yi yi `ul  1 a 4 58 ]
+"7
+[v pow@sign sign `uc  1 a 1 57 ]
+"5
+[v pow@x x `d  1 p 3 45 ]
+[v pow@y y `d  1 p 3 48 ]
+"31
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\log.c
+[v _log log `(d  1 e 3 0 ]
+{
+"7
+[v log@exponent exponent `i  1 a 2 27 ]
+"5
+[v log@x x `d  1 p 3 24 ]
+"9
+[v log@coeff coeff `C[9]d  1 s 27 coeff ]
+"36
+} 0
+"12 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\exp.c
+[v _exp exp `(d  1 e 3 0 ]
+{
+"14
+[v exp@exponent exponent `i  1 a 2 42 ]
+"15
+[v exp@sign sign `uc  1 a 1 44 ]
+"12
+[v exp@x x `d  1 p 3 36 ]
+"17
+[v exp@coeff coeff `C[10]d  1 s 30 coeff ]
+"57
+} 0
+"277 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+[v _ldexp ldexp `(d  1 e 3 0 ]
+{
+[v ldexp@value value `d  1 p 3 24 ]
+[v ldexp@newexp newexp `i  1 p 2 27 ]
+"307
+} 0
+"13 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\floor.c
+[v _floor floor `(d  1 e 3 0 ]
+{
+"15
+[v floor@i i `d  1 a 3 24 ]
+"16
+[v floor@expon expon `i  1 a 2 27 ]
+"13
+[v floor@x x `d  1 p 3 21 ]
+"30
+} 0
+"254 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+[v _frexp frexp `(d  1 e 3 0 ]
+{
+[v frexp@value value `d  1 p 3 23 ]
+[v frexp@eptr eptr `*.39i  1 p 2 26 ]
+"274
+} 0
+"42 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+{
+"44
+[v ___altoft@sign sign `uc  1 a 1 47 ]
+[v ___altoft@exp exp `uc  1 a 1 46 ]
+"42
+[v ___altoft@c c `l  1 p 4 38 ]
+"57
+} 0
+"20 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+{
+[v ___ftsub@f1 f1 `f  1 p 3 0 ]
+[v ___ftsub@f2 f2 `f  1 p 3 3 ]
+"27
+} 0
+"32 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+{
+"34
+[v ___awtoft@sign sign `uc  1 a 1 34 ]
+"32
+[v ___awtoft@c c `i  1 p 2 31 ]
+"42
+} 0
+"35 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+{
+"37
+[v ___lltoft@exp exp `uc  1 a 1 39 ]
+"35
+[v ___lltoft@c c `ul  1 p 4 31 ]
+"46
+} 0
+"76 D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\MPU-6050.c
+[v _getGyroY getGyroY `(i  1 e 2 0 ]
+{
+"77
+[v getGyroY@data data `i  1 a 2 33 ]
+[v getGyroY@dataL dataL `i  1 a 2 31 ]
+[v getGyroY@dataH dataH `i  1 a 2 29 ]
+"98
+} 0
+"148
+[v _getAccelZ getAccelZ `(i  1 e 2 0 ]
+{
+"149
+[v getAccelZ@data data `i  1 a 2 33 ]
+[v getAccelZ@dataL dataL `i  1 a 2 31 ]
+[v getAccelZ@dataH dataH `i  1 a 2 29 ]
+"170
+} 0
+"124
+[v _getAccelY getAccelY `(i  1 e 2 0 ]
+{
+"125
+[v getAccelY@data data `i  1 a 2 33 ]
+[v getAccelY@dataL dataL `i  1 a 2 31 ]
+[v getAccelY@dataH dataH `i  1 a 2 29 ]
+"146
+} 0
+"100
+[v _getAccelX getAccelX `(i  1 e 2 0 ]
+{
+"101
+[v getAccelX@data data `i  1 a 2 33 ]
+[v getAccelX@dataL dataL `i  1 a 2 31 ]
+[v getAccelX@dataH dataH `i  1 a 2 29 ]
+"122
+} 0
+"75 D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\i2c.c
+[v _WriteI2C WriteI2C `(uc  1 e 1 0 ]
+{
+[v WriteI2C@data_out data_out `uc  1 a 1 wreg ]
+[v WriteI2C@data_out data_out `uc  1 a 1 wreg ]
+"77
+[v WriteI2C@data_out data_out `uc  1 a 1 24 ]
+"92
+} 0
+"48
+[v _IdleI2C IdleI2C `(v  1 e 1 0 ]
+{
+"52
+} 0
+"67
+[v _ReadI2C ReadI2C `(uc  1 e 1 0 ]
+{
+"73
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\atan.c
+[v _atan atan `(d  1 e 3 0 ]
+{
+"28
+[v atan@val val `d  1 a 3 94 ]
+[v atan@val_squared val_squared `d  1 a 3 91 ]
+[v atan@x x `d  1 a 3 87 ]
+[v atan@y y `d  1 a 3 84 ]
+"27
+[v atan@recip recip `uc  1 a 1 90 ]
+"8
+[v atan@f f `d  1 p 3 81 ]
+"10
+[v atan@coeff_a coeff_a `C[6]d  1 s 18 coeff_a ]
+"19
+[v atan@coeff_b coeff_b `C[5]d  1 s 15 coeff_b ]
+"41
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fabs.c
+[v _fabs fabs `(d  1 e 3 0 ]
+{
+[v fabs@d d `d  1 p 3 34 ]
+"9
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\evalpoly.c
+[v _eval_poly eval_poly `(d  1 e 3 0 ]
+{
+"6
+[v eval_poly@res res `d  1 a 3 21 ]
+"4
+[v eval_poly@x x `d  1 p 3 12 ]
+[v eval_poly@d d `*.25Cd  1 p 2 15 ]
+[v eval_poly@n n `i  1 p 2 17 ]
+"12
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 27 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 23 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 25 ]
+"53
+} 0
+"54 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"60
+[v ___ftdiv@f3 f3 `f  1 a 3 31 ]
+"59
+[v ___ftdiv@sign sign `uc  1 a 1 35 ]
+[v ___ftdiv@exp exp `uc  1 a 1 34 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 30 ]
+"54
+[v ___ftdiv@f1 f1 `f  1 p 3 21 ]
+[v ___ftdiv@f2 f2 `f  1 p 3 24 ]
+"86
+} 0
+"11 D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\delay.c
+[v _DelayMs DelayMs `(v  1 e 1 0 ]
+{
+[v DelayMs@cnt cnt `uc  1 a 1 wreg ]
+"16
+[v DelayMs@_dcnt _dcnt `uc  1 a 1 25 ]
+"12
+[v DelayMs@i i `uc  1 a 1 24 ]
+"11
+[v DelayMs@cnt cnt `uc  1 a 1 wreg ]
+[v DelayMs@cnt cnt `uc  1 a 1 23 ]
+"19
+} 0
+"1 D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\PID&Motors.c
+[v _PWMSetup PWMSetup `(v  1 e 1 0 ]
+{
+"5
+} 0
+"7
+[v _PIDupdate PIDupdate `(v  1 e 1 0 ]
+{
+"11
+[v PIDupdate@Dterm Dterm `f  1 a 3 39 ]
+[v PIDupdate@Iterm Iterm `f  1 a 3 36 ]
+[v PIDupdate@Pterm Pterm `f  1 a 3 33 ]
+"8
+[v PIDupdate@precErrore precErrore `f  1 s 3 precErrore ]
+"9
+[v PIDupdate@sumErrore sumErrore `f  1 s 3 sumErrore ]
+"27
+} 0
+"44 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 33 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 37 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 32 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 23 ]
+"73
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+{
+[v ___ftneg@f1 f1 `f  1 p 3 31 ]
+"20
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 7 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 11 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 10 ]
+[v ___ftmul@exp exp `uc  1 a 1 6 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 0 ]
+[v ___ftmul@f2 f2 `f  1 p 3 3 ]
+"157
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+{
+[v ___ftge@ff1 ff1 `f  1 p 3 12 ]
+[v ___ftge@ff2 ff2 `f  1 p 3 15 ]
+"13
+} 0
+"86 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+{
+"88
+[v ___ftadd@exp1 exp1 `uc  1 a 1 46 ]
+[v ___ftadd@exp2 exp2 `uc  1 a 1 45 ]
+[v ___ftadd@sign sign `uc  1 a 1 44 ]
+"86
+[v ___ftadd@f1 f1 `f  1 p 3 35 ]
+[v ___ftadd@f2 f2 `f  1 p 3 38 ]
+"148
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 23 ]
+[v ___ftpack@exp exp `uc  1 p 1 26 ]
+[v ___ftpack@sign sign `uc  1 p 1 27 ]
+"86
+} 0
+"17 D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+[v _PICsetup PICsetup `(v  1 e 1 0 ]
+{
+"30
+} 0
+"59 D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\i2c.c
+[v _OpenI2C_StSpeed OpenI2C_StSpeed `(v  1 e 1 0 ]
+{
+"65
+} 0
+"57 D:\Desktop\Self Balancing Robot v2.0 Funzionante quasi\main.c
+[v _my_ISR my_ISR `II(i  1 e 2 0 ]
+{
+"64
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+{
+"11
+[v ___llmod@counter counter `uc  1 a 1 8 ]
+"8
+[v ___llmod@dividend dividend `ul  1 p 4 0 ]
+[v ___llmod@divisor divisor `ul  1 p 4 4 ]
+"26
+} 0

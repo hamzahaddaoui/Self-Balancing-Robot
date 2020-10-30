@@ -1,0 +1,6 @@
+Software funzionante in ogni parte
+DA AGGIUNGERE
+-Quando cade fai in modo che le ruote si fermino
+-Ogni tanto quando riceve qualche scossone non capisce più niente e i motori vanno a caso (NON RISOLTO... BOH SI RESETTA...)
+-Bluetooth a baud rate più alto per gestire meglio comunicazione (FATTO MA CI SONO PROBLEMI, VERIFICARE (IN UN ALTRO PROGRAMMA))
+-DATI PID DA CALIBRARE
