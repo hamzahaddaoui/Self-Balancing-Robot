@@ -1,1 +1,2 @@
 *.as linguist-language= C
+*.d linguist-language= C
